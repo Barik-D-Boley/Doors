@@ -15,6 +15,10 @@ a {
 div h2:hover {
     color: white;
 }
+iframe {
+    width: 450px;
+    height: 253px;
+}
 
 /*All Image IDs*/
 img#logo {
@@ -68,14 +72,14 @@ img#youtube {
             border: 1px solid black;
             margin: 10px;
             float: left;
-            width: 100px;
+            width: 150px;
         }
         .nav2 {
             background-color: lightblue;
             border: 1px solid black;
             margin: 10px;
             float: left;
-            width: 100px;   
+            width: 150px;   
         }
         .nav3 {
             background-color: lightblue;
@@ -84,45 +88,81 @@ img#youtube {
             float: left;
             width: 150px;
         }
+        .nav4 {
+            background-color: lightblue;
+            border: 1px solid black;
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
 
-/*Home Divs*/
-.home {
+/*All Divs*/
+.center {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 75%;
-    grid-template-rows: repeat(1, auto);
+    grid-template-rows: auto;
     justify-content: center;
 }
-    .top {
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(2, auto);
-        background-color: lightblue;
+
+/*Home*/
+.top {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+    background-color: lightblue;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+    .door {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .facebook {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .youtube {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+/*Funny*/
+.funny {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 283px);
+    background-color: #8B4513;
+}
+
+/*Wiki*/
+.information {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+    .info1 {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
-        .door {
-            grid-column: 1 / span 2;
-            grid-row: 1 / span 1;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-        .facebook {
-            grid-column: 1 / span 1;
-            grid-row: 2 / span 1;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-        .youtube {
-            grid-column: 2 / span 1;
-            grid-row: 2 / span 1;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
