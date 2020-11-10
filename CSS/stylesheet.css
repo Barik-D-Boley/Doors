@@ -20,6 +20,17 @@ iframe {
     height: 253px;
 }
 
+/*Dark Mode*/
+body.dark-mode {
+    background-image: url(../Images/dark_background.jpg);
+}
+body.dark-mode h1 {
+    color: white;
+}
+body.dark-mode a {
+    color: white;
+}
+
 /*All Image IDs*/
 img#logo {
     width: 150px;
@@ -44,7 +55,7 @@ img#youtube {
 .container1 {
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 200px auto 50px;
     grid-template-rows: repeat(2, auto);
     background-color: gray;
 }
@@ -73,13 +84,15 @@ img#youtube {
             margin: 10px;
             float: left;
             width: 150px;
+            border-radius: 10px;
         }
         .nav2 {
             background-color: lightblue;
             border: 1px solid black;
             margin: 10px;
             float: left;
-            width: 150px;   
+            width: 150px;
+            border-radius: 10px;
         }
         .nav3 {
             background-color: lightblue;
@@ -87,16 +100,14 @@ img#youtube {
             margin: 10px;
             float: left;
             width: 150px;
+            border-radius: 10px;
         }
-        .nav4 {
-            background-color: lightblue;
-            border: 1px solid black;
-            margin: 10px;
-            float: left;
-            width: 150px;
-        }
+    .dark {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+    }
 
-/*All Divs*/
+/*All Content Divs*/
 .center {
     display: grid;
     flex-wrap: wrap;
