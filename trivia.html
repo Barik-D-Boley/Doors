@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+    <link rel="icon" href="Images/favicon.png" type="image/gif" sizes="32x32">
+</head>
+<body>
+    <script type="text/javascript" src="JS/javascript.js"></script>
+    <div class="container1">
+        <div class="logo">
+            <a href="index.html"><img src="Images/logo.png" id="logo"></a>
+        </div>
+        <div class="title">
+            <h1>Doors</h1>
+        </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="index.html"><h2>Home</h2></a>
+            </div>
+            <div class="nav">
+                <a href="funny.html"><h2>Funny</h2></a>
+            </div>
+            <div class="nav">
+                <a href="wiki.html"><h2>Wiki</h2></a>
+            </div>
+            <div class="nav">
+                <a href="trivia.html"><h2>Trivia</h2></a>
+            </div>
+        </div>
+        <div class="dark">
+            <button onclick="darkMode()" id="dark">Toggle Dark Mode</button>
+        </div>
+        <div class="date">
+            <script type="text/javascript">showDate();</script>
+        </div>
+    </div>
+    <div class="center">
+        <div class="trivia">
+            <fieldset>
+                <legend>Trivia</legend>
+                    <p>When were doors invented?</p>
+                        <ul>
+                            <li>
+                                <input type="radio" id="air" name="element" value="air">
+                                <label for="air">1<sup>st</sup> Century</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" id="fire" name="element" value="fire">
+                                <label for="fire">2<sup>nd</sup> Century</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" id="earth" name="element" value="earth">
+                                <label for="earth">3<sup>rd</sup> Century</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" id="water" name="element" value="water">
+                                <label for="water">All of the Above</label><br>
+                            </li>
+                        </ul>
+                    <p>The door symbolizes hope, opportunity, communication and what?</sup></p>
+                        <ul>
+                            <li>
+                                <input type="radio" id="christmas" name="holiday" value="christmas">
+                                <label for="christmas">Liberation</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" id="thanksgiving" name="holiday" value="thanksgiving">
+                                <label for="thanksgiving">Litigation</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" id="Valentine's Day" name="holiday" value="Valentine's Day">
+                                <label for="Valentine's Day">Litination</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" id="Halloween" name="holiday" value="Halloween">
+                                <label for="Halloween">Lines of Coca Coal</label><br>
+                            </li>
+                        </ul>
+                    <p>How do you feel you did on this quiz?</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="sug1" name="sugar" value="sug1">
+                                <label for="sug1">Great</label><br>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sug2" name="sugar" value="sug2">
+                                <label for="sug2">Mediocre</label><br>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sug3" name="sugar" value="sug3">
+                                <label for="sug3">Terrible</label><br>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sug4" name="sugar" value="sug4">
+                                <label for="sug4">Other</label><br>
+                            </li>
+                        </ul>
+                        <button type="submit">Submit</button>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
